@@ -1,7 +1,21 @@
 package calculadora;
 
+/**
+ * Classe responsavel por executar testes simples da classe Calculadora.
+ * 
+ * Os testes verificam as operacoes basicas da calculadora, incluindo
+ * soma, subtracao, multiplicacao, divisao, divisao por zero e operacao invalida.
+ * 
+ * @author Kaick
+ * @version 1.0
+ */
 public class TesteCalculadora {
 
+    /**
+     * Metodo principal responsavel por executar os testes da calculadora.
+     * 
+     * @param args argumentos da linha de comando
+     */
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
@@ -21,6 +35,6 @@ public class TesteCalculadora {
         calc.calc(10, 0, "/"); // erro esperado
 
         System.out.println("Teste de operacao invalida:");
-        calc.calc(5, 5, "%"); // operacao invalida
+        calc.calc(5, 5, "%"); // operacao invalida esperada
     }
 }
