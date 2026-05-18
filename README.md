@@ -1,14 +1,16 @@
-# Projeto Calculadora - Kaick - RA 240328
+# Projeto Calculadora
 
-## Descrição do Projeto
+Projeto desenvolvido por **Kaick Gomes de Oliveira** — **RA 240328**.
 
-Este projeto foi desenvolvido em Java para a atividade individual **Testes Funcionais, Refatoração e Documentação de Software**.
+## Sobre o Projeto
 
-O sistema consiste em uma calculadora simples criada para a startup fictícia **FinançApp**, com o objetivo de realizar operações matemáticas básicas que podem ser utilizadas em funcionalidades de controle financeiro pessoal, como cálculo de orçamento mensal, divisão de despesas e projeção de economia.
+Este projeto foi desenvolvido em **Java** para a atividade individual **Testes Funcionais, Refatoração e Documentação de Software**.
+
+O sistema consiste em uma calculadora simples criada para a startup fictícia **FinançApp**. A proposta é realizar operações matemáticas básicas que podem ser utilizadas em funcionalidades de controle financeiro pessoal, como cálculo de orçamento mensal, divisão de despesas e projeção de economia.
 
 ## Objetivo da Atividade
 
-O objetivo da atividade é aplicar práticas de qualidade de software em um projeto Java, incluindo:
+A atividade tem como objetivo aplicar práticas de qualidade de software em um projeto Java, contemplando:
 
 - Testes funcionais;
 - Testes unitários;
@@ -19,12 +21,12 @@ O objetivo da atividade é aplicar práticas de qualidade de software em um proj
 
 ## Tecnologias Utilizadas
 
-- Java
-- JavaDoc
-- Git
-- GitHub
-- Visual Studio Code
-- Terminal do Windows
+- Java;
+- JavaDoc;
+- Git;
+- GitHub;
+- Visual Studio Code;
+- Terminal do Windows.
 
 ## Estrutura do Projeto
 
@@ -43,11 +45,11 @@ projeto_calculadora-Kaick-240328/
 └── README.md
 ```
 
-## Classe Calculadora
+## Funcionamento da Calculadora
 
-A classe `Calculadora` está localizada no pacote `calculadora`.
+A classe principal do projeto é a classe `Calculadora`, localizada no pacote `calculadora`.
 
-Ela possui o método principal:
+Ela possui o método:
 
 ```java
 calc(int a, int b, String op)
@@ -55,12 +57,12 @@ calc(int a, int b, String op)
 
 Esse método recebe dois números inteiros e uma operação matemática, retornando o resultado do cálculo.
 
-## Operações da Calculadora
+## Operações Disponíveis
 
 A calculadora realiza as quatro operações matemáticas básicas:
 
 | Operação | Símbolo | Exemplo | Resultado |
-|---|---|---|---|
+|---|---:|---:|---:|
 | Soma | `+` | `2 + 3` | `5` |
 | Subtração | `-` | `10 - 4` | `6` |
 | Multiplicação | `*` | `3 * 5` | `15` |
@@ -70,14 +72,20 @@ A calculadora realiza as quatro operações matemáticas básicas:
 
 O sistema possui tratamento para evitar falhas durante a execução.
 
-Foram tratados os seguintes casos:
+Os seguintes casos foram tratados:
 
 - Divisão por zero;
 - Operação inválida.
 
 Quando ocorre uma divisão por zero, o sistema exibe uma mensagem de erro e retorna `0`, evitando que o programa seja interrompido.
 
-Quando uma operação inválida é informada, o sistema exibe a mensagem `Operacao invalida` e também retorna `0`.
+Quando uma operação inválida é informada, o sistema exibe a mensagem:
+
+```text
+Operacao invalida
+```
+
+Nesse caso, o método também retorna `0`.
 
 ## Testes Realizados
 
@@ -92,13 +100,15 @@ Foram testados os seguintes casos:
 - Divisão por zero;
 - Operação inválida.
 
-## Print da Execução dos Testes - Versão Inicial
+## Prints da Execução dos Testes
+
+### Versão Inicial
 
 A imagem abaixo mostra a execução inicial dos testes no terminal.
 
 ![Print dos testes iniciais](imagens/teste.jpg)
 
-## Print da Execução dos Testes - Após Refatoração
+### Após Refatoração
 
 A imagem abaixo mostra os testes executados novamente após a refatoração do código.
 
@@ -108,9 +118,9 @@ A imagem abaixo mostra os testes executados novamente após a refatoração do c
 
 Após a implementação inicial, foi criada a branch `Refatoracao`.
 
-Nesta branch, o código foi reorganizado para melhorar a legibilidade e a manutenção.
+Nessa branch, o código foi reorganizado para melhorar a legibilidade e facilitar a manutenção.
 
-Foram aplicadas as seguintes melhorias:
+As principais melhorias aplicadas foram:
 
 - Extração de métodos;
 - Separação das operações em métodos específicos;
@@ -144,7 +154,7 @@ O arquivo principal da documentação é:
 docs/index.html
 ```
 
-## Print da Documentação JavaDoc
+### Print da Documentação JavaDoc
 
 A imagem abaixo mostra a documentação JavaDoc gerada e aberta no navegador.
 
@@ -160,7 +170,7 @@ javac -d bin src\calculadora\Calculadora.java src\calculadora\TesteCalculadora.j
 
 ## Como Executar os Testes
 
-Após compilar, execute:
+Após compilar o projeto, execute:
 
 ```bat
 java -cp bin calculadora.TesteCalculadora
@@ -182,7 +192,7 @@ docs/index.html
 
 ## Versionamento
 
-O projeto foi versionado utilizando Git e GitHub.
+O projeto foi versionado utilizando **Git** e **GitHub**.
 
 Foram criadas duas branches principais:
 
@@ -205,7 +215,11 @@ Os commits foram organizados conforme as etapas do desenvolvimento:
 
 ## Link do Repositório
 
+Repositório no GitHub:
+
+```text
 https://github.com/kaickgomesoliveira/projeto_calculadora-Kaick-240328
+```
 
 ## Autor
 
@@ -214,4 +228,4 @@ https://github.com/kaickgomesoliveira/projeto_calculadora-Kaick-240328
 
 ## Professor
 
-**DANIEL OHATA**
+**Daniel Ohata**
