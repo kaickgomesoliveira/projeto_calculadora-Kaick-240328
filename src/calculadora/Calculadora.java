@@ -1,11 +1,11 @@
 package calculadora;
 
 /**
- * Classe responsavel por realizar operacoes matematicas basicas.
+ * Classe criada para executar calculos matematicos simples.
  * 
- * A classe Calculadora possui metodos para soma, subtracao,
- * multiplicacao e divisao, alem de tratar erros como divisao por zero
- * e operacoes invalidas.
+ * A classe Calculadora disponibiliza funcionalidades para soma, subtracao,
+ * multiplicacao e divisao. Tambem possui tratamento para situacoes como
+ * divisao por zero e operadores nao reconhecidos.
  * 
  * @author Kaick
  * @version 1.0
@@ -13,20 +13,21 @@ package calculadora;
 public class Calculadora {
 
     /**
-     * Atributo que armazena o resultado da operacao realizada.
+     * Variavel utilizada para guardar o valor obtido apos o calculo.
      */
     public int r = 0;
 
     /**
-     * Metodo principal da calculadora.
+     * Metodo responsavel por selecionar e executar a operacao desejada.
      * 
-     * Recebe dois numeros inteiros e uma operacao matematica, executando
-     * o calculo correspondente.
+     * A partir de dois valores inteiros e de um operador recebido como texto,
+     * o metodo identifica qual calculo deve ser realizado e armazena o
+     * resultado na variavel r.
      * 
-     * @param a primeiro numero da operacao
-     * @param b segundo numero da operacao
-     * @param op operador matematico informado pelo usuario
-     * @return resultado da operacao realizada
+     * @param a primeiro valor utilizado no calculo
+     * @param b segundo valor utilizado no calculo
+     * @param op simbolo da operacao matematica escolhida
+     * @return valor final obtido pela operacao
      */
     public int calc(int a, int b, String op) {
         switch (op) {
@@ -52,47 +53,47 @@ public class Calculadora {
     }
 
     /**
-     * Realiza a soma entre dois numeros inteiros.
+     * Calcula a adicao de dois numeros inteiros.
      * 
-     * @param a primeiro numero
-     * @param b segundo numero
-     * @return resultado da soma
+     * @param a primeiro valor da soma
+     * @param b segundo valor da soma
+     * @return soma dos dois valores
      */
     public int somar(int a, int b) {
         return a + b;
     }
 
     /**
-     * Realiza a subtracao entre dois numeros inteiros.
+     * Calcula a diferenca entre dois numeros inteiros.
      * 
-     * @param a primeiro numero
-     * @param b segundo numero
-     * @return resultado da subtracao
+     * @param a valor inicial da subtracao
+     * @param b valor a ser subtraido
+     * @return diferenca entre os valores informados
      */
     public int subtrair(int a, int b) {
         return a - b;
     }
 
     /**
-     * Realiza a multiplicacao entre dois numeros inteiros.
+     * Calcula o produto entre dois numeros inteiros.
      * 
-     * @param a primeiro numero
-     * @param b segundo numero
-     * @return resultado da multiplicacao
+     * @param a primeiro fator da multiplicacao
+     * @param b segundo fator da multiplicacao
+     * @return produto dos dois fatores
      */
     public int multiplicar(int a, int b) {
         return a * b;
     }
 
     /**
-     * Realiza a divisao entre dois numeros inteiros.
+     * Calcula a divisao entre dois numeros inteiros.
      * 
-     * Caso o divisor seja zero, o metodo apresenta uma mensagem de erro
-     * e retorna zero, evitando falhas na execucao do programa.
+     * Quando o divisor informado for igual a zero, o metodo exibe uma mensagem
+     * de erro e retorna o valor zero como resultado da operacao.
      * 
-     * @param a dividendo
-     * @param b divisor
-     * @return resultado da divisao ou zero em caso de divisao por zero
+     * @param a valor que sera dividido
+     * @param b valor usado como divisor
+     * @return quociente da divisao ou zero caso o divisor seja zero
      */
     public int dividir(int a, int b) {
         if (b != 0) {
